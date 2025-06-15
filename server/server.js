@@ -57,6 +57,14 @@ app.post('/log', (req, res) => {
 
   res.status(200).json({ message: "Data saved successfully." });
 });
+// Handle POST request
+app.get('/log/clear', (req, res) => {
+ 
+  // Save to file
+  fs.writeFileSync(LOG_FILE, JSON.stringify([], null, 2));
+
+  res.status(200).json({ message: "Data saved successfully." });
+});
 
 // Start server
 app.listen(PORT, () => {
