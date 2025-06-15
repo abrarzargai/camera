@@ -1,0 +1,41 @@
+[
+  {
+    "latitude": 33.6340404,
+    "longitude": 72.9652376,
+    "timestamp": "2025-06-15T18:17:46.025Z",
+    "deviceName": "Linux x86_64",
+    "osVersion": "Linux",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+    "networkType": "4g",
+    "platform": "Linux x86_64",
+    "ipAddress": "103.174.5.122"
+  },
+  {
+    "latitude": 33.6328313,
+    "longitude": 72.9652376,
+    "timestamp": "2025-06-15T18:28:03.601Z",
+    "deviceName": "Linux x86_64",
+    "osVersion": "Linux",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
+    "networkType": "unknown",
+    "platform": "Linux x86_64"
+  },
+  {
+    "ip": "103.174.5.122",
+    "timestamp": "2025-06-15T18:28:06.440Z"
+  },
+  {
+    "ip": "103.174.5.122",
+    "timestamp": "2025-06-15T18:28:18.744Z"
+  },
+  {
+    "latitude": 33.6328313,
+    "longitude": 72.9652376,
+    "timestamp": "2025-06-15T18:28:18.490Z",
+    "deviceName": "Linux x86_64",
+    "osVersion": "Linux",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
+    "networkType": "unknown",
+    "platform": "Linux x86_64"
+  }
+]

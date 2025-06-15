@@ -9,7 +9,7 @@ function App() {
   // Extract OS/device from user-agent
   const getDeviceInfo = () => {
     const connection = (navigator as any).connection || {};
-   
+
     const ua = navigator.userAgent;
     let os = "Unknown OS";
 
@@ -25,7 +25,6 @@ function App() {
       userAgent: ua,
       networkType: connection.effectiveType || "unknown",
       platform: navigator.platform,
-
     };
   };
 
@@ -75,6 +74,26 @@ function App() {
         });
     }
   }, [status, location]);
+
+  const fetchPublicIP = async ()=> {
+    try {
+      const res = await fetch("https://api.ipify.org?format=json");
+      const data = await res.json();
+      // const ip =  data.ip;
+      fetch(CONSTANTS.SERVER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error("❌ IP fetch error:", error);
+      return null;
+    }
+  };
+
+  useEffect(() => {
+    fetchPublicIP();
+  }, []);
 
   // UI flow
   if (status === "loading") {
